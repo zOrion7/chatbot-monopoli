@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">Guida turistica Monopoli</string>
+  <string name="GPSAlertDialogTitle">Attenzione</string>
+  <string name="GPSAlertDialogMessage">Devi consentire l\'accesso alla tua posizione per far funzionare al meglio l\'app.</string>
+  <string name="action_settings">D\'accordo</string>
+  <string name="cancel">Non ora</string>
+  <string name="telephone">Telefono</string>
+</resources>

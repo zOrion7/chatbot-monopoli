@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="GPSAlertDialogMessage">You need to allow access to your location for the app to work best.</string>
+    <string name="GPSAlertDialogTitle">Attention</string>
+    <string name="action_settings">Okay</string>
+    <string name="app_name">Monopoli tourist guide</string>
+    <string name="cancel">Not now</string>
+    <string name="telephone">Telephone</string>
+</resources>

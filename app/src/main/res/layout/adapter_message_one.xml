@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+  <TextView
+      android:id="@+id/message_send"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="5dp"
+      android:textColor="@android:color/white"
+      android:textSize="20sp"
+      android:minHeight="50dp"
+      android:layout_marginBottom="5dp"
+      android:background="@drawable/bg_chat_send"
+      android:layout_marginStart="30dp">
+  </TextView>
+
+  <TextView
+      android:id="@+id/message_receive"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:layout_marginBottom="5dp"
+      android:background="@drawable/bg_chat_receive"
+      android:minHeight="50dp"
+      android:padding="5dp"
+      android:textColor="@android:color/black"
+      android:textSize="20sp"></TextView>
+
+  <RelativeLayout
+      android:id="@+id/restaurantView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:minHeight="25dp"
+        android:padding="5dp"
+        android:text="ERROR"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"></TextView>
+
+    <ImageView
+        android:id="@+id/star_filled_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_filled_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_filled_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_filled_4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_filled_5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_halved_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <ImageView
+        android:id="@+id/star_halved_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <ImageView
+        android:id="@+id/star_halved_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <ImageView
+        android:id="@+id/star_halved_4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <ImageView
+        android:id="@+id/star_halved_5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <TextView
+        android:id="@+id/restaurant_reviews_number"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/restaurant_name"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/restaurant_rating"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/restaurant_distance"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurant_gmaps"
+        android:layout_alignStart="@+id/restaurant_gmaps"
+        android:layout_alignEnd="@+id/restaurant_gmaps"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-9dp"
+        android:gravity="center"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/restaurant_phone_number"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="83dp"
+        android:autoLink="phone"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/restaurant_gmaps"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-75dp"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@+id/restaurant_name"
+        android:background="@drawable/gmaps"
+        android:linksClickable="true" />
+
+    <TextView
+        android:id="@+id/restaurant_rating"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/restaurant_reviews_number"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="0dp"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/restaurantView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/restaurant_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:minHeight="25dp"
+        android:padding="5dp"
+        android:text="ERROR"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"></TextView>
+
+    <ImageView
+        android:id="@+id/star_filled_1_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_filled_2_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_filled_3_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_filled_4_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_filled_5_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <ImageView
+        android:id="@+id/star_halved_1_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <ImageView
+        android:id="@+id/star_halved_2_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <ImageView
+        android:id="@+id/star_halved_3_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <ImageView
+        android:id="@+id/star_halved_4_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <ImageView
+        android:id="@+id/star_halved_5_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/star_halved" />
+
+    <TextView
+        android:id="@+id/restaurant_reviews_number2"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/restaurant_name2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/restaurant_rating2"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/restaurant_distance2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurant_gmaps2"
+        android:layout_alignStart="@+id/restaurant_gmaps2"
+        android:layout_alignEnd="@+id/restaurant_gmaps2"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-9dp"
+        android:gravity="center"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/restaurant_phone_number2"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="83dp"
+        android:text="ERROR"
+        android:autoLink="phone"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/restaurant_gmaps2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-75dp"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@+id/restaurant_name2"
+        android:background="@drawable/gmaps"
+        android:linksClickable="true" />
+
+    <TextView
+        android:id="@+id/restaurant_rating2"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/restaurant_reviews_number2"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="0dp"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/itinerarioView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/itinerario_mezzi"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itinerario_titolo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/itinerario_imageView"
+        android:gravity="top"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/itinerario_gmaps"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/itinerario_titolo"
+        android:layout_marginStart="-75dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toEndOf="@+id/itinerario_titolo"
+        android:background="@drawable/gmaps"
+        android:linksClickable="true"
+        android:onClick="gmaps" />
+
+    <TextView
+        android:id="@+id/itinerario_distanza"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itinerario_gmaps"
+        android:layout_alignStart="@+id/itinerario_gmaps"
+        android:layout_alignEnd="@+id/itinerario_gmaps"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-12dp"
+        android:text="ERROR"
+        android:textAlignment="center"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/itinerario_durata"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itinerario_mezzi"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/itinerario_imageView"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/itinerario_categoria"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itinerario_titolo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/itinerario_imageView"
+        android:text="ERROR"
+        android:textColor="#4E4E4E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/itinerario_titolo"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/itinerario_imageView"
+        android:gravity="center"
+        android:minHeight="25dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/itinerario_description"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itinerario_durata"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#323232"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/itinerario_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/star_filled" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/luoghiView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/luoghi_gmaps"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-75dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/luoghi_name"
+        android:background="@drawable/gmaps"
+        android:linksClickable="true" />
+
+    <TextView
+        android:id="@+id/luoghi_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/luoghi_gmaps"
+        android:layout_alignStart="@+id/luoghi_gmaps"
+        android:layout_alignEnd="@+id/luoghi_gmaps"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="ERROR"
+        android:textAlignment="center"
+        android:textColor="#4E4E4E"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/luoghi_name"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/luoghi_imageView"
+        android:minHeight="25dp"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/luoghi_description"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/luoghi_imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#323232"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/luoghi_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/star_filled" />
+
+    <TextView
+        android:id="@+id/luoghi_type_spiagge_tel"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/luoghi_name"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/luoghi_imageView"
+        android:text=""
+        android:textColor="#4E4E4E" />
+
+  </RelativeLayout>
+
+</LinearLayout>

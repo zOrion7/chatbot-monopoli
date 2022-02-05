@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\dev\\android\\chatbot-monopoli\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+            "map": [
+                {
+                    "source": "D:\\dev\\android\\chatbot-monopoli\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,5,2,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "177,118,296,57,346,390",
+                        "endColumns": "117,57,48,59,42,47",
+                        "endOffsets": "290,171,340,112,384,433"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,173,231,280,340,383",
+                        "endColumns": "117,57,48,59,42,47",
+                        "endOffsets": "168,226,275,335,378,426"
+                    }
+                }
+            ]
+        }
+    ]
+}

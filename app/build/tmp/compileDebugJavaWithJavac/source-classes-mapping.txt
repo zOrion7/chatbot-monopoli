@@ -1,0 +1,29 @@
+com/sysag/ChatbotMonopoli/helpers/RequestJavaV2Task.java
+ com.sysag.ChatbotMonopoli.helpers.RequestJavaV2Task
+com/sysag/ChatbotMonopoli/interfaces/BotReply.java
+ com.sysag.ChatbotMonopoli.interfaces.BotReply
+com/sysag/ChatbotMonopoli/Itinerario.java
+ com.sysag.ChatbotMonopoli.Itinerario
+com/sysag/ChatbotMonopoli/Ristorante.java
+ com.sysag.ChatbotMonopoli.Ristorante
+com/sysag/ChatbotMonopoli/helpers/SendMessageInBg.java
+ com.sysag.ChatbotMonopoli.helpers.SendMessageInBg
+com/sysag/ChatbotMonopoli/GPSTracker.java
+ com.sysag.ChatbotMonopoli.GPSTracker
+ com.sysag.ChatbotMonopoli.GPSTracker$1
+ com.sysag.ChatbotMonopoli.GPSTracker$2
+com/sysag/ChatbotMonopoli/Spiaggia.java
+ com.sysag.ChatbotMonopoli.Spiaggia
+com/sysag/ChatbotMonopoli/Distanza.java
+ com.sysag.ChatbotMonopoli.Distanza
+com/sysag/ChatbotMonopoli/models/Message.java
+ com.sysag.ChatbotMonopoli.models.Message
+com/sysag/ChatbotMonopoli/BuildConfig.java
+ com.sysag.ChatbotMonopoli.BuildConfig
+com/sysag/ChatbotMonopoli/MainActivity.java
+ com.sysag.ChatbotMonopoli.MainActivity
+ com.sysag.ChatbotMonopoli.MainActivity$1
+com/sysag/ChatbotMonopoli/adapters/ChatAdapter.java
+ com.sysag.ChatbotMonopoli.adapters.ChatAdapter
+ com.sysag.ChatbotMonopoli.adapters.ChatAdapter$LoadImage
+ com.sysag.ChatbotMonopoli.adapters.ChatAdapter$MyViewHolder
